@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+.headerH1{
+    color: rgb(121, 116, 229);
+    font-family: 'Rowdies',sans-serif;
+    font-size: 100px;
+    text-shadow: 4px 4px 2px rgba(141,137,225,0.6);
+}
+
+.options{
+    display: flex;
+    
+}
+.cuadro{
+    border: none;
+}
+.cuadro::placeholder{
+    color: #322c39;
+    font-family: 'Rowdies',sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
