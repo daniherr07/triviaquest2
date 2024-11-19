@@ -59,6 +59,10 @@ export default function Home() {
     if (result.toPlay) {
       router.push('/protected/play');
     }
+
+    if (result.toError) {
+      router.push('/?error=Usuario%20o%20contraseña%20incorrectos');
+    }
   };
 
   const handleChange2 = (e) => {
