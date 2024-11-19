@@ -139,3 +139,11 @@
     50% {transform: scale(1.01);}
     100% {transform: scale(1);}
   }
+
+  @media screen and (max-width: 650px){
+    .button{
+
+        width: 12em;
+        
+     }
+}

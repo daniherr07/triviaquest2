@@ -1,1 +1,1 @@
-export const address = 'triviaquest-backend.vercel.app';
+export const address = 'https://triviaquest-backend.vercel.app';

@@ -1,6 +1,5 @@
 import styles from "./styles.module.css";
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation';
   
   
 export default async function Play() {
@@ -10,7 +9,9 @@ export default async function Play() {
 
   
     return (
+      
     <div className={styles.allContainer}>
+
       <div className={styles.cajitaArriba}>
         <div className={`${styles.cajita1} ${styles.cajita}`} />
         <div className={`${styles.cajita2} ${styles.cajita}`} />
@@ -18,8 +19,6 @@ export default async function Play() {
         <div className={`${styles.cajita4} ${styles.cajita}`} />
         <div className={`${styles.cajita5} ${styles.cajita}`} />
       </div>
-
-
       <main className={styles.main}>
         <h1 className={styles.headerH1}>TriviaQuest</h1>
         <h2 className={styles.text}>Hola de nuevo <span className={styles.userName}>{userData.userName}</span></h2>

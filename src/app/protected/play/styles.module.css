@@ -205,3 +205,10 @@
     50% {transform: scale(1.01);}
     100% {transform: scale(1);}
   }
+
+  
+  @media screen and (max-width: 650px){
+    .headerH1{
+        font-size: 50px;
+    }
+}

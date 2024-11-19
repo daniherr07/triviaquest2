@@ -116,6 +116,10 @@ export default function Play() {
 
   return (
   <div className={styles.allContainer}>
+    <audio autoPlay loop>
+        <source src="/inGame.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
     <div className={styles.questionContainer}>
 
     <header className={styles.header}>
