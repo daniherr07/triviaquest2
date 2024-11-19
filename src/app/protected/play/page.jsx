@@ -11,7 +11,10 @@ export default async function Play() {
     return (
       
     <div className={styles.allContainer}>
-
+      <audio autoPlay loop>
+          <source src="/lobby.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+      </audio>
       <div className={styles.cajitaArriba}>
         <div className={`${styles.cajita1} ${styles.cajita}`} />
         <div className={`${styles.cajita2} ${styles.cajita}`} />
