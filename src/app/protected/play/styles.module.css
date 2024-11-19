@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+.headerH1{
+    color: rgb(121, 116, 229);
+    font-family: 'Rowdies',sans-serif;
+    font-size: 100px;
+    text-shadow: 4px 4px 2px rgba(141,137,225,0.6);
+    animation: tituloAnimacion 5s ease-in-out 2s infinite
+}
+
+.options{
+    display: flex;
+    
+}
+.cuadro{
+    border: none;
+    height: 2em;
+    border-bottom: 2px solid #74b6e5;
+    color: #322c39;
+    font-family: 'Rowdies',sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.cuadro:focus{
+    outline: none;
+}
+
+.cuadro::placeholder{
+    color: #322c3975;
+    font-family: 'Rowdies',sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    place-content: center;
+    place-items: center;
+}
+
+@keyframes tituloAnimacion {
+    0% {
+        transform: rotate(3deg);
+    }
+    50% {transform: rotate(-3deg)}
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+
 .allContainer{
     width: 100vw;
     height: 100vh;
@@ -71,61 +124,74 @@
     animation: animation 5s ease-in-out 2s infinite
 }
 
-.options{
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    box-shadow: 0px 0px 26px 7px rgba(235,235,235,1);
-    border-radius: 20px;
-    animation: scale 1s ease-in-out 2s infinite
-}
 
-.slider{
-    border-radius: 20px;
-    width: 50%;
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    background: linear-gradient(to right bottom, #cdffd8, #aaf7e0, #89edec, #74e1f7, #72d2ff, #70c6ff, #78b8ff, #88a9fb, #819cf7, #7d8ff2, #7a82ec, #7974e5);
-    transition: all 0.4s ease-in-out;
-}
-
-.button{
-   border: none;
-   background-color: transparent;
-   transition: all 2s ease-in-out;
-   width: 15em;
-   padding: 1em;
-   border-radius: 20px;
-   z-index: 2;
-   color: #322c39;
-   font-size: 1em;
-   font-weight: 200;
-   
-}
-
-.submit{
+.play{
     border: none;
     background-color: transparent;
-    height: 3.5em;
+    height: 3em;
+    width: 75%;
+    box-shadow: 0px 2px 0px 4px #7a74e588;
+    place-self: center;
+    border-radius: 20px;
+    font-weight: 200;
+    transition: all 0.2s ease-in-out;
+    font-size: 2em;
+    color: #000;
+    text-decoration: none;
+}
+
+.play *{
+    color: #000;
+    text-decoration: none;
+}
+
+.play:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.play:active{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.text{
+    font-weight: 200;
+}
+
+.userName{
+    color: #7974e5;
+    text-decoration: underline;
+}
+
+.faq{
+    border: none;
+    background-color: transparent;
+    height: 3em;
     width: 45%;
     box-shadow: 0px 2px 0px 4px #7a74e588;
     place-self: center;
     border-radius: 20px;
     font-weight: 200;
     transition: all 0.2s ease-in-out;
+    font-size: 1.2em;
 }
 
-.submit:hover{
+.faq:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
 
-.submit:active{
+.faq *{
+    color: #000;
+    text-decoration: none;
+}
+
+.play:active{
     transform: scale(0.9);
     cursor: pointer;
 }
+
 
 @keyframes animation {
     0% {top: 0;}
