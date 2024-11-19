@@ -155,41 +155,47 @@
     cursor: pointer;
 }
 
-.text{
+.tableWrapper {
+    height: fit-content;
+    max-height: 40vh;
+    width: 100%; /* Adjust this value as needed */
+    overflow-y: auto;
+    box-shadow: 5px 5px 1px 4px #7a74e563;
+    border-radius: 11px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 11px;
+    
+}
+
+.tableHead {
+    position: sticky;
+    top: 0;
+    background-color: #7974e5;
+    color: white;
     font-weight: 200;
+
 }
 
-.userName{
-    color: #7974e5;
-    text-decoration: underline;
-}
-
-.faq{
-    border: none;
-    background-color: transparent;
-    height: 3em;
-    width: 45%;
-    box-shadow: 0px 2px 0px 4px #7a74e588;
-    place-self: center;
-    border-radius: 20px;
+.tableHead *{
+    color: white;
     font-weight: 200;
-    transition: all 0.2s ease-in-out;
-    font-size: 1.2em;
+    border: 1px solid black; /* Adds borders to cells */
+    padding: 8px;
+
 }
 
-.faq:hover{
-    transform: scale(1.03);
-    cursor: pointer;
+.tableBody {
+    border-radius: 11px;
+    text-align: center;
 }
 
-.faq *{
-    color: #000;
-    text-decoration: none;
-}
-
-.play:active{
-    transform: scale(0.9);
-    cursor: pointer;
+.tableBody * {
+    border: 1px solid black; /* Adds borders to cells */
+    padding: 8px;
 }
 
 
@@ -210,10 +216,5 @@
   @media screen and (max-width: 650px){
     .headerH1{
         font-size: 50px;
-    }
-
-    .main{
-
-        gap: 1em;
     }
 }
