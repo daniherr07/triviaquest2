@@ -33,7 +33,7 @@ export async function POST(request) {
         userName: data.username,
         high: backendData.points,
       };
-      response.cookies.set('auth', JSON.stringify(userData), { httpOnly: true, secure: false, maxAge: 60 * 60 * 24 });
+      response.cookies.set('auth', JSON.stringify(userData), { httpOnly: true, secure: true, maxAge: 60 * 60 * 24 });
       return response;
 
     } else{

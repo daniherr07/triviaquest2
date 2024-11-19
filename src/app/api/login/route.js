@@ -29,7 +29,7 @@ export async function POST(request) {
         userName: backendData.user,
         high: backendData.highScore,
       };
-      response.cookies.set('auth', JSON.stringify(userData), { httpOnly: true, secure: false, maxAge: 60 * 60 * 24 });
+      response.cookies.set('auth', JSON.stringify(userData), { httpOnly: true, secure: true, maxAge: 60 * 60 * 24 });
       return response;
 
     } else{
