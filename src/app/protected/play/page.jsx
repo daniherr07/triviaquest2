@@ -1,5 +1,6 @@
 import styles from "./styles.module.css";
 import { cookies } from 'next/headers'
+import AudioPlayer from "./AudioPlayer";
   
   
 export default async function Play() {
@@ -11,10 +12,7 @@ export default async function Play() {
     return (
       
     <div className={styles.allContainer}>
-      <audio autoPlay loop>
-          <source src="/lobby.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-      </audio>
+      <AudioPlayer></AudioPlayer>
       <div className={styles.cajitaArriba}>
         <div className={`${styles.cajita1} ${styles.cajita}`} />
         <div className={`${styles.cajita2} ${styles.cajita}`} />
